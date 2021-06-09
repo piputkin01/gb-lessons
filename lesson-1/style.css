@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    }
+
+.container{
+    width: 100%;
+    max-width: 1272px;
+    margin: 0 auto;
+}
+.page-header{
+    width: 100%;
+    background: #445161;
+    padding: 25px 51px 19px 50px;
+    box-sizing: border-box;
+    color: #FFF;  
+    display:flex;
+    justify-content: space-between;
+}
+ 
+.page-header-wrp{
+    max-width: 443px;
+    width: 100%;
+}
+
+.page-header-title{
+    margin: 0 0 40px 0;
+    font-size: 60px;
+    line-height: 69px;
+}
+
+.page-header-list{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.page-header-list-item{
+    padding-left: 21px;
+    font-size: 20px;
+    line-height: 23px;
+    margin: 0 0 10px 0;
+    position: relative;
+}
+
+.page-header-list-item:last-child{
+    margin: 0 auto;
+}
+
+.page-header-list-item::before{
+    display: block;
+    content: " ";
+    background-image: url(images/header_li.svg);
+    width: 16px;
+    height: 13px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+}
+
+.page-header-img{
+    display:block;
+    background:#FFF;
+    width: 469px;
+    height: 214px;
+}
+
+.page-main{
+    width: 100%;
+    box-sizing: border-box;
+    color: #FFF;  
+}
+
+.page-main-section{
+    display:flex;
+    justify-content: space-between;
+    padding: 45px 50px 50px 50px;
+}
+
+.page-main-wrp{
+    max-width: 646px;
+    width: 100%;
+}
+
+.page-main-title{
+font-size: 30px;
+line-height: 36px;
+color: #445161;
+margin-bottom: 17px;
+}
+
+.page-main-par{
+font-size: 16px;
+line-height: 24px;
+color: #333333;
+width: 646px;
+margin: 0 0 11px 0;
+}
+
+.page-main-par:last-child{
+    margin: 0 auto;
+    }
+
+
+.page-main-video{
+    display:block;
+    width: 430px;
+    height: 245px;
+    background: #445161;
+}
+
+.page-main-pluses-section{
+    background: #F5F5F5;
+    padding: 25px 50px 50px 50px;
+}
+
+.page-main-pluses-title{
+font-size: 30px;
+line-height: 36px;
+width: 100%;
+text-align: center;
+color: #445161;
+margin: 0 0 27px 0;
+}
+
+.page-main-pluses-list{
+    margin: 0;
+    padding: 0;
+    column-count: 2;
+}
+.page-main-pluses-list-item{
+    padding-left: 42px;
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    list-style: none;
+    color: #333333;
+    max-width: 568px;
+    margin: 33px 0 0 0;
+}
+
+.page-main-pluses-list-item:first-child{
+    margin: 0;
+}
+
+.page-main-pluses-list-item::before{
+    display: block;
+    content: " ";
+    background-image: url(images/plus_icon.svg);
+    width: 34px;
+    height: 35px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background-size: cover;
+}
