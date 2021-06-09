@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    }
+
+.container{
+    width: 100%;
+    max-width: 1272px;
+    margin: 0 auto;
+}
+.page-header{
+    width: 100%;
+    background: #445161;
+    padding: 25px 51px 19px 50px;
+    box-sizing: border-box;
+    color: #FFF;  
+    display:flex;
+    justify-content: space-between;
+}
+ 
+.page-header-wrp{
+    max-width: 443px;
+    width: 100%;
+}
+
+.page-header-title{
+    margin: 0 0 40px 0;
+    font-size: 60px;
+    line-height: 69px;
+}
+
+.page-header-list{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.page-header-list-item{
+    padding-left: 21px;
+    font-size: 20px;
+    line-height: 23px;
+    margin: 0 0 10px 0;
+    position: relative;
+}
+
+.page-header-list-item:last-child{
+    margin: 0 auto;
+}
+
+.page-header-list-item::before{
+    display: block;
+    content: " ";
+    background-image: url(../img/header_li.svg);
+    width: 16px;
+    height: 13px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+}
+
+.page-header-pic{
+    display:block;
+    background:#FFF;
+    width: 469px;
+}
+
+.page-main{
+    width: 100%;
+    box-sizing: border-box;
+    color: #FFF;  
+}
+
+.page-main-section{
+    display:flex;
+    justify-content: space-between;
+    padding: 45px 50px 50px 50px;
+}
+
+.page-main-wrp{
+    max-width: 646px;
+    width: 100%;
+}
+
+.page-main-title{
+font-size: 30px;
+line-height: 36px;
+color: #445161;
+margin: 0 0 17px 0;
+}
+
+.page-main-par{
+font-size: 16px;
+line-height: 24px;
+color: #333333;
+max-width: 646px;
+margin: 0 0 11px 0;
+}
+
+.page-main-par:last-child{
+    margin: 0 auto;
+    }
+
+
+.page-main-video{
+    display:block;
+    width: 430px;
+    height: 245px;
+    background: #445161;
+}
+
+.page-main-pluses-section{
+    background: #F5F5F5;
+    padding: 25px 50px 50px 50px;
+}
+
+.page-main-pluses-title{
+width: 100%;
+text-align: center;
+margin: 0 0 22px 0;
+}
+
+.page-main-pluses-list{
+    margin: 0;
+    padding: 0;
+    column-count: 2;
+}
+.page-main-pluses-list-item{
+    padding: 0 0 0 42px;
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    list-style: none;
+    color: #333333;
+    max-width: 568px;
+    margin: 0 0 33px 0;
+}
+
+.page-main-pluses-list-item:last-child, .page-main-pluses-list-item:nth-child(3){
+    margin: 0 auto;
+}
+
+.page-main-pluses-list-item::before{
+    display: block;
+    content: " ";
+    background-image: url(../img/plus_icon.svg);
+    width: 34px;
+    height: 35px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background-size: cover;
+}
+
+.page-main-ss-section{
+    background: #FFF;
+    padding: 25px 42px 51px 50px;
+}
+
+.page-main-ss-title{
+    width: 100%;
+    text-align: center;
+    color: #445161;
+    margin: 0 0 45px 0;
+}
+
+.page-main-ss-wrp{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-main-ss-content{
+    margin: 0 0 27px 0;
+    max-width: 575px;
+    min-height: 153px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-main-ss-content-mb{
+    margin: 0;
+}
+
+.page-main-ss-sub{
+    margin: -2px 0 16px 0;
+    padding: 0;
+    max-width: 389px;
+}
+
+.page-main-ss-pic{
+    display: block;
+    min-width: 200px;
+    background: #445161;
+    margin: 2px 15px 1px 1px;
+}
+
+.page-main-ss-sub-title{
+    max-width: 340px;
+    font-size: 24px;
+    align-items: center;
+    margin: 0 19px 2px 0;
+}
+
+.page-main-ss-sub-par{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+}
+
+.page-main-reviews{
+    padding: 25px 50px 42px 50px;
+    background: #F5F5F5;
+}
+
+.page-main-reviews-title{
+    margin: 0 0 29px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.page-main-reviews-wrp{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-main-reviews-article{
+    width: 568px;
+    margin: 0 0 22px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-main-reviews-article-logo{
+    min-width: 66px;
+    height: 66px;
+    background: #445161;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 2px 15px 0 4px;
+    border-radius: 50%;
+}
+
+.page-main-reviews-article-logo-first{
+    border: 1px solid #000000;
+}
+
+.page-main-reviews-article-par{
+    padding: 16px 10px 5px 15px;
+    font-family: Roboto;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000;
+    max-width: 483px;
+    background: #EBEBEB;
+    border-radius: 5px;
+    position: relative;
+}
+
+.page-main-reviews-article-par:before{
+    display: block;
+    position: absolute;
+    content: " ";
+    background-image: url(../img/polygon.svg);
+    width: 15px;
+    height: 24px;
+    top: 0;
+    left: 0;
+    margin: 38px 0 0 -12px;
+}
+
+.page-main-reviews-article-link{
+    display: inline-block;
+    font-family: Roboto;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 18px;
+    color: #989898;
+    text-decoration: none;
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+.page-main-reviews-article-mb{
+    margin: 0;
+}
+
+.page-main-bin-section{
+    padding: 45px 0 36px 50px;
+}
+
+.page-main-bin-title{
+    width: 100%;
+    text-align: center;
+    margin: 0 0 26px 0;
+}
+
+.page-main-bin-wrp{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.page-main-bin-box{
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    max-width: 300px;
+    background: #445161;
+    border-radius: 5px;
+}
+
+.page-main-bin-box-title{
+    font-size: 24px;
+    line-height: 30px;
+    color: #FFF;
+    margin: 13px 0 8px 0;
+    text-align: center;
+}
+
+.page-main-bin-box-span{
+    font-size: 40px;
+    line-height: 30px;
+    color: #445162;
+    background: #FFFFFF;
+    border: 2px solid #445162;
+    box-sizing: border-box;
+    padding: 25px 0 16px 0;
+    text-align: center;
+}
+
+.page-main-bin-box-list{
+    margin: 8px 8px 16px 20px;
+    padding: 0 0 0 20px;
+}
+
+.page-main-bin-box-list-item{
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFF;
+    margin: 0 0 5px 0;
+    padding: 0;
+}
+
+.page-main-bin-box-list-item:last-child{
+    margin: 0;
+}
+
+.page-main-bin-box-button{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    color: #445161; 
+    background: #FFFFFF;
+    text-align: center;
+    border-radius: 10px;
+    padding: 16px 0 9px 0;
+    display: inline-block;
+    border: none;
+    margin: 0 19px 19px 19px;
+}
+
+.page-footer{
+    background: #445162;
+}
