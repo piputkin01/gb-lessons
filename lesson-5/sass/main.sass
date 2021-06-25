@@ -1,0 +1,271 @@
+body
+    margin: 0
+    padding: 0
+.container
+    max-width: 1920px
+    width: 100%
+    margin: 0 auto
+.page-header
+    max-height: 1024px
+    width: 100%
+    height: 100%
+    padding: 39px 0 40px 0
+    background-image: url(../image/page_bg.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    display: flex
+    flex-flow: column wrap
+    &-menu
+        width: 100%
+        display: flex
+        justify-content: center
+    &-logo
+        display: flex
+        justify-content: space-between
+        align-items: center
+        min-width: 182px
+        text-decoration: none
+        color: #fff
+        &-svg
+            fill: currentColor
+        &-text 
+            font-family: Raleway
+            font-size: 34px
+            font-weight: 400
+            text-align: right
+        &:hover
+            color: #998675
+        &:active
+            color: darken(#998675, 40%)
+    &-nav
+        padding: 19px 0 0 0
+        margin: 0 0 0 219px
+        width: 100%
+        max-width: 650px
+        min-height: 14px
+        &-list
+            list-style-type: none
+            padding: 0
+            margin: 0
+            &-item
+                display: inline
+                margin: 0 25px 0 0
+            &-item:last-child
+                margin: 0
+            &-item-link
+                    text-decoration: none
+                    font-size: 14px
+                    text-align: left
+                    color: #fff
+                    font-family: Montserrat
+                    line-height: 1.2
+                    font-weight: 300
+                    &:hover
+                        color: #C7B299  
+                    &:active
+                        color: darken(#C7B299 , 40%)
+        &-bucket
+            background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='18' fill='white' height='24'%3E%3Cpath d='M14.995,2.999 L13.496,2.999 C13.496,1.342 11.483,-0.002 8.999,-0.002 C6.514,-0.002 4.501,1.342 4.501,2.999 L3.002,2.999 C1.346,2.999 0.003,4.341 0.003,5.997 L0.003,20.995 C0.003,22.651 1.346,23.994 3.002,23.994 L14.995,23.994 C16.652,23.994 17.994,22.651 17.994,20.995 L17.994,5.997 C17.994,4.341 16.652,2.999 14.995,2.999 ZM8.999,1.498 C10.655,1.498 11.997,1.962 11.997,2.999 L6.000,2.999 C6.000,1.962 7.343,1.498 8.999,1.498 ZM16.495,20.995 C16.495,21.823 15.824,22.494 14.995,22.494 L3.002,22.494 C2.174,22.494 1.502,21.823 1.502,20.995 L1.502,19.495 L16.495,19.495 L16.495,20.995 ZM16.495,17.995 L1.502,17.995 L1.502,5.997 C1.502,5.169 2.174,4.497 3.002,4.497 L4.501,4.497 L4.501,8.998 L6.000,8.998 L6.000,4.497 L11.997,4.497 L11.997,8.998 L13.496,8.998 L13.496,4.497 L14.995,4.497 C15.824,4.497 16.495,5.169 16.495,5.997 L16.495,17.995 Z'/%3E%3C/svg%3E")
+            width: 19px
+            height: 25px
+            outline: none
+            border: none
+            background-color: transparent
+            background-size: contain
+            background-repeat: no-repeat
+            margin: 15px 0 0 45px
+            &:hover
+                background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='18' fill-rule='evenodd' fill='%23C7B299 ' height='24'%3E%3Cpath d='M14.995,2.999 L13.496,2.999 C13.496,1.342 11.483,-0.002 8.999,-0.002 C6.514,-0.002 4.501,1.342 4.501,2.999 L3.002,2.999 C1.346,2.999 0.003,4.341 0.003,5.997 L0.003,20.995 C0.003,22.651 1.346,23.994 3.002,23.994 L14.995,23.994 C16.652,23.994 17.994,22.651 17.994,20.995 L17.994,5.997 C17.994,4.341 16.652,2.999 14.995,2.999 ZM8.999,1.498 C10.655,1.498 11.997,1.962 11.997,2.999 L6.000,2.999 C6.000,1.962 7.343,1.498 8.999,1.498 ZM16.495,20.995 C16.495,21.823 15.824,22.494 14.995,22.494 L3.002,22.494 C2.174,22.494 1.502,21.823 1.502,20.995 L1.502,19.495 L16.495,19.495 L16.495,20.995 ZM16.495,17.995 L1.502,17.995 L1.502,5.997 C1.502,5.169 2.174,4.497 3.002,4.497 L4.501,4.497 L4.501,8.998 L6.000,8.998 L6.000,4.497 L11.997,4.497 L11.997,8.998 L13.496,8.998 L13.496,4.497 L14.995,4.497 C15.824,4.497 16.495,5.169 16.495,5.997 L16.495,17.995 Z'/%3E%3C/svg%3E")
+        &-search
+            width: 25px
+            height: 25px
+            outline: none
+            border: none
+            background-color: transparent
+            background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' fill='white' height='24'%3E%3Cpath d='M23.762,22.681 L17.569,16.586 C19.190,14.825 20.187,12.494 20.187,9.929 C20.186,4.443 15.668,-0.002 10.093,-0.002 C4.519,-0.002 0.001,4.443 0.001,9.929 C0.001,15.416 4.519,19.862 10.093,19.862 C12.502,19.862 14.711,19.028 16.446,17.644 L22.663,23.763 C22.966,24.062 23.458,24.062 23.761,23.763 C24.065,23.464 24.065,22.979 23.762,22.681 ZM10.093,18.334 C5.377,18.334 1.553,14.572 1.553,9.929 C1.553,5.288 5.377,1.525 10.093,1.525 C14.810,1.525 18.633,5.288 18.633,9.929 C18.633,14.572 14.810,18.334 10.093,18.334 Z'/%3E%3C/svg%3E")
+            background-size: contain
+            background-repeat: no-repeat
+            margin: 15px 0 0 27px
+            color: #fff
+            font-size: 16px
+            line-height: 12px
+            family-font: Raleway
+            position: relative
+            &:focus
+                width: 250px
+                background-color: transpanent
+                transition: width 1s ease-out
+                background-position: right
+            &:not(:focus)::-webkit-search-cancel-button
+                display: none
+            &::-webkit-search-cancel-button
+                position: absolute
+                left: 0
+                top: 0
+                margin-left: -10px
+    &-content
+        display: flex
+        justify-content: space-between
+        margin: 275px 0 0 0
+        &-value
+            display: flex
+            justify-content: space-between
+            flex-direction: column
+            max-width: 589px
+            width: 100%
+        &-subtitle, &-title
+            font-family: Raleway
+            line-height: 1.2
+        &-subtitle, &-title, &-text
+            text-align: center
+            color: #fff
+        &-subtitle
+            font-size: 36px
+            font-weight: 500
+            margin: 0 0 10px 0
+            width: 100%
+        &-title
+            font-size: 52px
+            font-weight: 800
+            margin: 0 0 8px 0                      
+        &-text
+            font-family: Montserrat
+            font-size: 16px
+            line-height: 24px
+            font-weight: 300
+            max-width: 678px
+            margin: 0 0 46px 0
+        &-left-button, &-right-button
+            display: block
+            width: 40px
+            height: 73px
+            position: relative
+            background-color: rgba(0,0,0,0)
+            outline: none
+            border: none
+        &-right-button
+            margin: 105px 150px 0 0
+            &:hover:after
+                border-top: 2px solid darken(#fff,30%)
+                border-right: 2px solid darken(#fff,30%)
+            &:after
+                content: ""
+                display: inline-block
+                width: 50px
+                height: 50px
+                border-top: 2px solid #fff
+                border-right: 2px solid #fff
+                transform: rotate(45deg)
+                position: absolute
+                top: 10px
+                left: -25px
+        &-left-button
+            margin: 105px 0 0 150px
+            &:hover:after
+                border-top: 2px solid darken(#fff,30%)
+                border-left: 2px solid darken(#fff,30%)
+            &:after
+                content: ""
+                display: inline-block
+                width: 50px
+                height: 50px
+                border-top: 2px solid #fff
+                border-left: 2px solid #fff
+                transform: rotate(-45deg)
+                position: absolute
+                top: 10px
+                left: 10px
+        &-button
+            font-family: Raleway
+            font-size: 14px
+            line-height: 23px
+            font-weight: 800
+            text-transform: uppercase
+            color: #ffffff
+            padding: 17px 37px
+            max-width: 173px
+            margin: 0 auto
+            text-align: center
+            background-color: #998675
+            box-shadow: inset 0px -3px 0px 0px #736357
+            border-radius: 3px
+            text-decoration: none
+        &-pagi-wrapper
+            display: flex
+            justify-content: center
+            padding: 330px 0 0 0
+        &-pagination
+            width: 98px
+            height: 15px
+            display: flex
+            justify-content: space-between
+            &-item
+                display: block
+                width: 12px
+                height: 12px
+                opacity: 0.5
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='13px' height='13px' viewBox='0 0 13 13'%3E%3Cpath fill-rule='evenodd' fill='%23ffffff' d='M6.699829,1.472229 C9.475098,1.472229 11.7247925,3.7218628 11.7247925,6.497864 C11.7247925,9.27179 9.475098,11.522644 6.699829,11.522644 C3.9246216,11.522644 1.6748047,9.27179 1.6748047,6.497864 C1.6748047,3.7218628 3.9246216,1.472229 6.699829,1.472229 Z'/%3E%3C/svg%3E")
+                &:hover
+                    transform: scale(1.2)
+                    background-color: rgba(255,255,255,0.0)
+                    border-radius: 100%
+                    border: 2px solid #d3c1ad
+                    background-image: none
+.page-main
+    width: 100%
+    background: #fff
+    &-section
+        display: flex
+        justify-content: center
+        padding: 80px 0 80px 0
+        &-box
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            max-width: 266px
+            width: 100%
+            text-align: center
+            margin: 0 33px 0 0
+            padding: 0 0 0 0
+            &:hover &-title
+                color: #c7b299 
+            &:hover::after
+                background-color: #c7b299
+            &:hover &-img-svg
+                fill: rgb(199, 178, 153)
+            &::after
+                content: ' '
+                display: block
+                width: 70px
+                background-color: #f1eee9
+                height: 3px
+                margin-top: 25px
+            &:last-child
+                margin: 0
+            &-img
+                display: flex
+                justify-content: center
+                align-items: flex-end
+                width: 100%
+                max-height: 50px
+                height: 100%
+                margin: 0 0 23px 0
+                &-svg
+                    fill: rgb(103, 103, 103)
+            &-title
+                font-family: Raleway
+                font-size: 22px
+                line-height: 1.2
+                font-weight: 600
+                color: #555555
+                margin: 0 0 14px 0
+            &-text
+                font-family: Montserrat
+                font-size: 14px
+                line-height: 24px
+                font-weight: 300
+                color: #8c8c8c
+                margin: 0
+                padding: 0
+                text-indent: 10px
+                
