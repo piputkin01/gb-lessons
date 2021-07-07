@@ -1,0 +1,987 @@
+@import "fonts"
+$mainfont: raleway
+$addfont: montserrat
+
+body
+    margin: 0
+    padding: 0
+.container
+    max-width: 1920px
+    width: 100%
+    margin: 0 auto
+.page-header
+    max-height: 1024px
+    width: 100%
+    padding: 39px 0 40px 0
+    background-image: url(../image/page_bg.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    box-sizing: border-box
+    &-menu
+        width: 100%
+        display: flex
+        justify-content: center
+    &-logo
+        display: flex
+        justify-content: space-between
+        align-items: center
+        min-width: 182px
+        text-decoration: none
+        color: #fff
+        &-svg
+            fill: currentColor
+        &-text 
+            font-family: $mainfont
+            font-size: 34px
+            font-weight: 400
+            text-align: right
+        &:hover
+            color: #998675
+        &:active
+            color: darken(#998675, 40%)
+    &-nav
+        padding: 19px 0 0 0
+        margin: 0 0 0 219px
+        width: 100%
+        max-width: 650px
+        min-height: 14px
+        box-sizing: border-box
+        &-list
+            list-style-type: none
+            padding: 0
+            margin: 0
+            &-item
+                display: inline
+                margin: 0 25px 0 0
+            &-item:last-child
+                margin: 0
+            &-item-link
+                    text-decoration: none
+                    font-size: 14px
+                    text-align: left
+                    color: #fff
+                    font-family: $addfont
+                    line-height: 1.2
+                    font-weight: 300
+                    &:hover
+                        color: #C7B299  
+                    &:active
+                        color: darken(#C7B299 , 40%)
+        &-bucket
+            background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='18' fill='white' height='24'%3E%3Cpath d='M14.995,2.999 L13.496,2.999 C13.496,1.342 11.483,-0.002 8.999,-0.002 C6.514,-0.002 4.501,1.342 4.501,2.999 L3.002,2.999 C1.346,2.999 0.003,4.341 0.003,5.997 L0.003,20.995 C0.003,22.651 1.346,23.994 3.002,23.994 L14.995,23.994 C16.652,23.994 17.994,22.651 17.994,20.995 L17.994,5.997 C17.994,4.341 16.652,2.999 14.995,2.999 ZM8.999,1.498 C10.655,1.498 11.997,1.962 11.997,2.999 L6.000,2.999 C6.000,1.962 7.343,1.498 8.999,1.498 ZM16.495,20.995 C16.495,21.823 15.824,22.494 14.995,22.494 L3.002,22.494 C2.174,22.494 1.502,21.823 1.502,20.995 L1.502,19.495 L16.495,19.495 L16.495,20.995 ZM16.495,17.995 L1.502,17.995 L1.502,5.997 C1.502,5.169 2.174,4.497 3.002,4.497 L4.501,4.497 L4.501,8.998 L6.000,8.998 L6.000,4.497 L11.997,4.497 L11.997,8.998 L13.496,8.998 L13.496,4.497 L14.995,4.497 C15.824,4.497 16.495,5.169 16.495,5.997 L16.495,17.995 Z'/%3E%3C/svg%3E")
+            width: 19px
+            height: 25px
+            outline: none
+            border: none
+            background-color: transparent
+            background-size: contain
+            background-repeat: no-repeat
+            margin: 15px 0 0 45px
+            &:hover
+                background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='18' fill-rule='evenodd' fill='%23C7B299 ' height='24'%3E%3Cpath d='M14.995,2.999 L13.496,2.999 C13.496,1.342 11.483,-0.002 8.999,-0.002 C6.514,-0.002 4.501,1.342 4.501,2.999 L3.002,2.999 C1.346,2.999 0.003,4.341 0.003,5.997 L0.003,20.995 C0.003,22.651 1.346,23.994 3.002,23.994 L14.995,23.994 C16.652,23.994 17.994,22.651 17.994,20.995 L17.994,5.997 C17.994,4.341 16.652,2.999 14.995,2.999 ZM8.999,1.498 C10.655,1.498 11.997,1.962 11.997,2.999 L6.000,2.999 C6.000,1.962 7.343,1.498 8.999,1.498 ZM16.495,20.995 C16.495,21.823 15.824,22.494 14.995,22.494 L3.002,22.494 C2.174,22.494 1.502,21.823 1.502,20.995 L1.502,19.495 L16.495,19.495 L16.495,20.995 ZM16.495,17.995 L1.502,17.995 L1.502,5.997 C1.502,5.169 2.174,4.497 3.002,4.497 L4.501,4.497 L4.501,8.998 L6.000,8.998 L6.000,4.497 L11.997,4.497 L11.997,8.998 L13.496,8.998 L13.496,4.497 L14.995,4.497 C15.824,4.497 16.495,5.169 16.495,5.997 L16.495,17.995 Z'/%3E%3C/svg%3E")
+        &-search
+            width: 25px
+            height: 25px
+            outline: none
+            border: none
+            background-color: transparent
+            background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' fill='white' height='24'%3E%3Cpath d='M23.762,22.681 L17.569,16.586 C19.190,14.825 20.187,12.494 20.187,9.929 C20.186,4.443 15.668,-0.002 10.093,-0.002 C4.519,-0.002 0.001,4.443 0.001,9.929 C0.001,15.416 4.519,19.862 10.093,19.862 C12.502,19.862 14.711,19.028 16.446,17.644 L22.663,23.763 C22.966,24.062 23.458,24.062 23.761,23.763 C24.065,23.464 24.065,22.979 23.762,22.681 ZM10.093,18.334 C5.377,18.334 1.553,14.572 1.553,9.929 C1.553,5.288 5.377,1.525 10.093,1.525 C14.810,1.525 18.633,5.288 18.633,9.929 C18.633,14.572 14.810,18.334 10.093,18.334 Z'/%3E%3C/svg%3E")
+            background-size: contain
+            background-repeat: no-repeat
+            margin: 15px 0 0 27px
+            color: #fff
+            font-size: 16px
+            line-height: 12px
+            family-font: $mainfont
+            position: relative
+            &:focus
+                width: 250px
+                background-color: transpanent
+                transition: width 1s ease-out
+                background-position: right
+            &:not(:focus)::-webkit-search-cancel-button
+                display: none
+            &::-webkit-search-cancel-button
+                position: absolute
+                left: 0
+                top: 0
+                margin-left: -10px
+    &-content
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        width: 100%
+        margin: 275px 0 0 0
+        &-value
+            display: flex
+            justify-content: center
+            flex-wrap: wrap
+            max-width: 589px
+            width: 100%
+        &-subtitle, &-title
+            font-family: $mainfont
+            line-height: 1.2
+        &-subtitle, &-title, &-text
+            text-align: center
+            color: #fff
+            width: 100% 
+        &-subtitle
+            font-size: 36px
+            font-weight: 500
+            margin: 0 0 10px 0
+        &-title
+            font-size: 52px
+            font-weight: 800
+            margin: 0 0 8px 0                           
+        &-text
+            font-family: $addfont
+            font-size: 16px
+            line-height: 24px
+            font-weight: 300
+            margin: 0 0 46px 0
+        &-left-button, &-right-button
+            display: block
+            width: 40px
+            height: 73px
+            position: relative
+            background-color: rgba(0,0,0,0)
+            outline: none
+            border: none
+        &-right-button
+            margin: 105px 150px 0 0
+            &:hover:after
+                border-top: 2px solid darken(#fff,30%)
+                border-right: 2px solid darken(#fff,30%)
+            &:after
+                content: ""
+                display: inline-block
+                width: 50px
+                height: 50px
+                border-top: 2px solid #fff
+                border-right: 2px solid #fff
+                transform: rotate(45deg)
+                position: absolute
+                top: 10px
+                left: -25px
+        &-left-button
+            margin: 105px 0 0 150px
+            &:hover:after
+                border-top: 2px solid darken(#fff,30%)
+                border-left: 2px solid darken(#fff,30%)
+            &:after
+                content: ""
+                display: inline-block
+                width: 50px
+                height: 50px
+                border-top: 2px solid #fff
+                border-left: 2px solid #fff
+                transform: rotate(-45deg)
+                position: absolute
+                top: 10px
+                left: 10px
+        &-button
+            font-family: $mainfont
+            font-size: 14px
+            line-height: 23px
+            font-weight: 800
+            text-transform: uppercase
+            color: #ffffff
+            padding: 17px 37px
+            max-width: 173px
+            margin: 0 0 327px 0
+            text-align: center
+            background-color: #998675
+            box-shadow: inset 0px -3px 0px 0px #736357
+            border-radius: 3px
+            text-decoration: none
+            box-sizing: border-box
+            &:hover
+                box-shadow: inset 0px -3px 0px 0px lighten(#736357,20%)
+                background-color: lighten(#998675,20%)
+            &:active
+                box-shadow: inset 0px -3px 0px 0px darken(#736357,20%)
+                background-color: darken(#998675,20%)
+        &-pagination
+            width: 100%
+            height: 15px
+            display: flex
+            justify-content: center
+            &-item
+                margin: 0 10px 0 0 
+                display: block
+                width: 12px
+                height: 12px
+                opacity: 0.5
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='13px' height='13px' viewBox='0 0 13 13'%3E%3Cpath fill-rule='evenodd' fill='%23ffffff' d='M6.699829,1.472229 C9.475098,1.472229 11.7247925,3.7218628 11.7247925,6.497864 C11.7247925,9.27179 9.475098,11.522644 6.699829,11.522644 C3.9246216,11.522644 1.6748047,9.27179 1.6748047,6.497864 C1.6748047,3.7218628 3.9246216,1.472229 6.699829,1.472229 Z'/%3E%3C/svg%3E")
+                &:hover
+                    transform: scale(1.2)
+                    background-color: rgba(255,255,255,0.0)
+                    border-radius: 100%
+                    border: 2px solid #d3c1ad
+                    background-image: none
+.page-main
+    width: 100%
+    background: #fff
+    &-section
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        padding: 80px 0 80px 0
+        width: 100%
+        box-sizing: border-box
+        &-box
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            max-width: 266px
+            width: 100%
+            text-align: center
+            margin: 0 33px 0 0
+            padding: 0
+            &:hover &-title
+                color: #c7b299 
+            &:hover::after
+                background-color: #c7b299
+            &:hover &-img-svg
+                fill: rgb(199, 178, 153)
+            &::after
+                content: ' '
+                display: block
+                width: 70px
+                background-color: #f1eee9
+                height: 3px
+                margin-top: 25px
+            &:last-child
+                margin: 0
+            &-img
+                display: flex
+                justify-content: center
+                align-items: flex-end
+                width: 100%
+                max-height: 50px
+                height: 100%
+                margin: 0 0 23px 0
+                &-svg
+                    fill: rgb(103, 103, 103)
+            &-title
+                font-family: $mainfont
+                font-size: 22px
+                line-height: 1.2
+                font-weight: 600
+                color: #555555
+                margin: 0 0 14px 0
+            &-text
+                font-family: $addfont
+                font-size: 14px
+                line-height: 24px
+                font-weight: 300
+                color: #8c8c8c
+                margin: 0
+                padding: 0
+                text-indent: 10px
+    &-ideas
+        display: flex
+        flex-flow: wrap column
+        align-items: center
+        width: 100%
+        background-color: #fbfaf8
+        padding: 83px 0 0 0
+        box-sizing: border-box
+        &-title
+            width: 100%
+            text-align: center
+            font-family: $mainfont
+            font-size: 30px
+            line-height: 1.2
+            font-weight: 600
+            color: #555555
+            margin: 0 0 11px 0
+        &-text
+            text-align: center
+            margin: 0 0 35px 0
+            padding: 0
+            width: 100%
+            max-width: 757px
+            font-family: $addfont
+            font-size: 16px
+            line-height: 28px
+            font-weight: 300
+            color: #8c8c8c
+        &-box
+            max-width: 1230px
+            width: 100%
+            min-height: 482px
+            background-image: url(../image/box_bottom1.jpg),url(../image/box_bottom3.jpg),url(../image/box_bottom2.jpg)
+            background-size: 770px, 770px, 770px
+            background-repeat: no-repeat
+            background-position: bottom center, bottom left, bottom right
+        &-aside
+            padding: 42px 0 47px 0
+            display: flex
+            width: 100%
+            justify-content: center
+            background-color: #f4f5f8
+            background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%)
+            font-family: $addfont
+            &-h3
+                font-size: 18px
+                line-height: 1.2
+                font-weight: 300
+                color: #615855
+                margin: 0
+                display: inline-block
+            &-h2
+                font-family: $mainfont
+                font-size: 28px
+                line-height: 1.2
+                font-weight: 400
+                color: #fff
+                margin: 0px 0 3px 0
+                & .brand
+                    display: inline-block
+                    color: #c7b299
+            &-button
+                text-decoration: none
+                background-color: #998675
+                box-shadow: inset 0px -3px 0px 0px #736357
+                border-radius: 3px
+                font-family: $mainfont
+                font-size: 14px
+                line-height: 23px
+                font-weight: 800
+                text-transform: uppercase
+                color: #fff
+                padding: 15px 28px
+                margin: 8px 0 0px 470px
+                box-sizing: border-box
+                &:hover
+                    box-shadow: inset 0px -3px 0px 0px lighten(#736357,20%)
+                    background-color: lighten(#998675,20%)
+                &:active
+                    box-shadow: inset 0px -3px 0px 0px darken(#736357,20%)
+                    background-color: darken(#998675,20%)
+    &-project
+        display: flex
+        align-items: center
+        flex-flow: wrap column
+        padding: 77px 0 80px 0
+        width: 100%
+        box-sizing: border-box
+        &-title, &-text
+            text-align: center
+            margin: 0
+        &-title
+            width: 100%
+            font-family: $mainfont
+            font-size: 30px
+            line-height: 1.2
+            font-weight: 600
+            color: #555555
+        &-text
+            max-width: 757px
+            width: 100%
+            font-family: $addfont
+            font-size: 16px
+            line-height: 28px
+            font-weight: 300
+            color: #8c8c8c
+            margin: 11px 0 0 0
+        &-list
+            display: flex
+            justify-content: flex-start
+            flex-wrap: wrap
+            list-style-type: none
+            margin: 35px 0 0 6px
+            padding: 0
+            width: 100%
+            max-width: 620px
+            &-item
+                margin: 0 10px 0 0
+                &-button
+                    appearance: none
+                    background: rgba(17,17,17,0.0)
+                    outline: none
+                    border: 1px solid #ebebeb
+                    border-radius: 3px
+                    font-family: $addfont
+                    font-size: 14px
+                    line-height: 21px
+                    font-weight: 300
+                    color: #8c8c8c
+                    box-sizing: border-box
+                    padding: 5px 20px 8px 20px
+                    min-width: 70px
+                    max-width: 135px
+                    min-height: 32px
+                    margin: 0
+                    &:hover
+                        background: #998675
+                        color: #ffffff
+                    &:active
+                        background:  darken(#998675, 20%)
+                        color: #ffffff
+        &-cards-wrapper
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            width: 100%
+            max-width: 1170px
+            margin: 37px 0 0 0
+        &-card
+            max-width: 370px
+            width: 100%
+            position: relative
+            margin: 0 0 29px 0
+            &:nth-last-child(-n+3)
+                margin: 0
+            &:hover &-more
+                display: block
+            &:hover &-link
+                display: block
+            &:hover &-more:hover
+                fill: rgb(199, 178, 153)
+            &:hover &-link:hover
+                fill: rgb(199, 178, 153)
+            &:hover &-more:active
+                fill: darken(rgb(199, 178, 153),20%)
+            &:hover &-link:active
+                fill: darken(rgb(199, 178, 153),20%)
+            &:hover &-image
+                filter: brightness(25%)
+            &:hover &-content
+                background-color: #362f2d
+            &:hover &-content::before
+                border-bottom: 10px solid #362f2d
+            &:hover &-title
+                color: #fff
+            &:hover &-subtitle
+                color: #c7b299        
+            &-image
+                max-height: 237px
+                width: 100%
+                background-size: contain
+                background-repeat: no-repeat
+                display: block
+            &-content
+                width: 100%
+                position: relative
+                background-color: #fbfaf8
+                padding: 23px 0 27px 0
+                box-sizing: border-box
+                transition: background-color 0.3s ease, fill 0.3s ease, color 0.3s ease
+                &::before
+                    content: ""
+                    border: 16px solid transparent
+                    border-bottom: 10px solid #fbfaf8
+                    position: absolute
+                    top: -25px
+                    left: 19px
+            &-title, &-subtitle
+                display: block
+                margin: 0
+            &-title
+                margin: 0 0 0 27px
+                font-family: $mainfont
+                font-size: 20px
+                line-height: 1.2
+                font-weight: 500
+                color: #c7b299
+                box-sizing: border-box
+            &-subtitle
+                margin: 7px 0 0 29px
+                font-family: $addfont
+                font-size: 14px
+                line-height: 20px
+                font-weight: 300
+                color: #d1d1d1
+            &-more,
+            &-link
+                width: 27px
+                height: 27px
+                display: none
+                -webkit-background-size: cover
+                background-size: cover
+                background-repeat: no-repeat
+                background-position: center
+                border: none
+                background-color: transparent
+                position: absolute
+                top: 30%
+                fill: white
+            &-more
+                left: 40%                  
+            &-link
+                right: 40%
+        &-loadmore
+            margin: 40px 0 0 0
+            appearance: none
+            outline: none
+            background-color: #998675
+            box-shadow: inset 0px -3px 0px 0px #736357
+            border-radius: 3px
+            border: none
+            font-family: $mainfont
+            font-size: 14px
+            line-height: 23px
+            font-weight: 800
+            text-transform: uppercase
+            color: #ffffff
+            box-sizing: border-box
+            padding: 19px 45px 20px 44px
+            &:hover
+                background-color: lighten(#998675, 20%)
+            &:active
+                background-color: darken(#998675, 20%)
+    &-presentation
+        display: flex
+        justify-content: center
+        width: 100%
+        position: relative
+        overflow: hidden
+        height: 705px
+        &-wrap
+            position: absolute
+            max-width: 552px
+            width: 100%
+            margin: 210px 0 0 0
+        &-videobutton
+            display: block
+            margin: 0 auto
+            outline: none
+            border: 0
+            fill: white
+            width: 100px
+            height: 100px
+            border-radius: 50%
+            background-color: rgba(0, 0, 0, 0.2)
+            transition: background-color 0.5s ease, fill 0.3s ease
+            &:hover
+                background-color: lighten(rgba(0, 0, 0, 0.2),10%)
+                fill: rgb(199, 178, 153)
+            &:active
+                background-color: darken(rgba(0, 0, 0, 0.3),50%)
+                fill:darken(rgb(199, 178, 153),60%)
+                
+        &-title, &-text
+            text-align: center
+        &-title
+            font-family: $mainfont
+            font-size: 30px
+            line-height: 1.2
+            font-weight: 500
+            color: #fff
+            margin: 38px 0 0 0
+        &-text
+            font-family: $addfont
+            font-size: 16px
+            line-height: 28px
+            font-weight: 300
+            color: #fff
+            margin: 14px 0 0 0
+        &-time
+            display: block
+            text-align: center
+            font-family: $addfont
+            font-size: 14px
+            line-height: 24px
+            font-weight: 400
+            color: #c7b299
+            margin: 28px 0 0 0
+    &-mobile
+        display: flex
+        justify-content: center
+        width: 100%
+        &-image
+            margin: 79px 0 0 34px
+        &-wrap
+            max-width: 657px
+            width: 100%
+            margin: 189px 0 0 31px
+        &-title
+            font-family: $mainfont
+            font-size: 30px
+            line-height: 1.2
+            font-weight: 600
+            color: #555
+            margin: 0
+        &-text
+            font-family: $addfont
+            font-size: 16px
+            line-height: 28px
+            font-weight: 300
+            color: #8c8c8c
+            margin: 25px 0 0 0
+        &-list
+            list-style-type: none
+            position: relative
+            margin: 35px 0 0 48px
+            &-item
+                font-family: $addfont
+                font-size: 16px
+                line-height: 32px
+                font-weight: 300
+                color: #8c8c8c
+                margin: 0 0 0 10px
+                &::before
+                    display: block
+                    position: absolute
+                    content: ' '
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='23px' height='23px' viewBox='0 0 23 23'%3E%3Cpath fill-rule='evenodd' fill='%23c7b299' d='M11.499695,1.0004883 C5.70166,1.0004883 1.0013428,5.7006836 1.0013428,11.499023 C1.0013428,17.297852 5.70166,21.997559 11.499695,21.997559 C17.298523,21.997559 21.998169,17.297852 21.998169,11.499023 C21.998169,5.7006836 17.298523,1.0004883 11.499695,1.0004883 ZM14.788696,11.996582 C14.788696,11.996582 10.249512,16.535156 10.249512,16.535156 C9.976929,16.808105 9.533386,16.808105 9.259949,16.535156 C8.987366,16.261719 8.987366,15.818359 9.259949,15.54541 C9.259949,15.54541 13.306824,11.499023 13.306824,11.499023 C13.306824,11.499023 9.259949,7.4521484 9.259949,7.4521484 C8.987366,7.179199 8.987366,6.73584 9.259949,6.4628906 C9.533386,6.189453 9.976929,6.189453 10.249512,6.4628906 C10.249512,6.4628906 14.788696,11.002441 14.788696,11.002441 C14.926758,11.139648 14.995178,11.3203125 14.993774,11.499023 C14.993774,11.6796875 14.926758,11.858398 14.788696,11.996582 Z'/%3E%3C/svg%3E")
+                    width: 23px
+                    height: 22px
+                    left: 0
+                    margin-top: 2px
+    &-stats
+        display: flex
+        justify-content: center
+        width: 100%
+        min-height: 300px
+        background-color: #f4f5f8
+        background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%)
+        flex-wrap: wrap
+        padding: 69px 0 60px 0
+        box-sizing: border-box
+        &-svg
+            fill: rgb(199, 178, 153)
+        &-box
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            max-width: 136px
+            width: 100%
+            text-align: center
+            font-family: $addfont
+            margin: 0 32px
+            &::after
+                content: ' '
+                display: block
+                width: 30px
+                background-color: #fff
+                height: 2px
+                margin-top: 25px
+        &-title
+            font-size: 48px
+            line-height: 36px
+            font-weight: 200
+            color: #fff
+            margin: 30px 0 0 0
+            min-width: 136px
+        &-subtitle
+            font-size: 14px
+            line-height: 20px
+            min-width: 136px
+            font-weight: 300
+            text-transform: uppercase
+            color: #c7b299
+            margin: 15px 0 0 0
+    &-posts
+        width: 100%
+        display: flex
+        align-items: center
+        flex-flow: wrap column
+        padding: 77px 0 80px 0
+        box-sizing: border-box
+        &-title, &-text
+            text-align: center
+        &-title
+            font-family: $mainfont
+            font-size: 30px
+            line-height: 1.2
+            font-weight: 600
+            color: #555
+            margin: 0
+        &-text
+            max-width: 757px
+            width: 100%
+            font-family: $addfont
+            font-size: 16px
+            line-height: 28px
+            font-weight: 300
+            color: #8c8c8c
+            margin: 14px 0 0 0
+        &-wrap
+            display: flex
+            justify-content: space-between
+            max-width: 1170px
+            width: 100%
+            margin: 34px 0 0 0
+        &-box
+            max-width: 370px
+            width: 100%
+            position: relative
+            max-height: 395px
+            background-color: rgba(119,119,119,0.0)
+            border: 1px solid #f8f8f8
+            padding: 0 0 28px 0
+            box-sizing: border-box
+            transition: background-color 0.3s ease, color 0.3s ease
+            &:hover
+                background-color: #362f2d
+            &:hover &-day
+                background-color: #c7b299
+            &:hover &-month
+                background-color: #a48d72
+            &:hover &-title
+                color: #c7b299
+            &:hover &-text
+                color: #fff
+            &:hover &-image
+                filter: brightness(50%)
+            &-day, &-month
+                transition: background-color 0.4s easein
+                position: absolute
+                left: 20px
+                top: 20px
+                display: block
+                color: #fff
+                max-width: 50px
+                width: 100%
+                text-align: center
+                box-sizing: border-box
+            &-day
+                font-family: $addfont
+                font-size: 24px
+                line-height: 20px
+                font-weight: 300
+                background-color: #363636
+                border-radius: 3px 3px 0px 0px
+                padding: 8px 0
+            &-month
+                font-family: Roboto
+                font-size: 12px
+                line-height: 20px
+                font-weight: 400
+                top: 55px
+                background-color: #252525
+                border-radius: 0px 0px 3px 3px
+                padding: 3px 0
+            &-image
+                max-height: 220px
+                width: 100%
+                background-size: contain
+                background-repeat: no-repeat
+                display: block
+            &-title
+                font-family: $mainfont
+                font-size: 20px
+                line-height: 1.2
+                font-weight: 500
+                color: #555
+                margin: 26px 0 0 0
+            &-text, &-link
+                font-family: $addfont
+                font-size: 14px
+                font-weight: 300
+            &-text
+                line-height: 22px
+                color: #8c8c8c
+                margin: 13px 0 0 0
+            &-link
+                line-height: 20px
+                color: #c7b299
+                margin: 21px 0 0 0
+                display: block
+                max-width: 100px
+                text-decoration: none
+                &::after
+                    content: "\25b8"
+                    margin-left: 6px
+            &-link:hover
+                color: lighten(#c7b299, 20%)
+            &-link:active
+                color: darken(#c7b299, 20%)
+            &-title, &-link, &-text
+                margin-left: 30px
+        &-pagination
+            margin: 43px 0 0 0
+            list-style-type: none
+            padding: 0
+            &-icon
+                fill: rgb(209, 209, 209)
+            &-item
+                display: inline
+                margin: 0 0 0 5px
+            &-item &-icon:hover
+                fill: rgb(199, 178, 153)
+    &-sponsors
+        width: 100%
+        display: flex
+        justify-content: center
+        flex-flow: wrap row
+        min-height: 489px
+        box-sizing: border-box
+        background-image: url(../image/sponsors/sponsors_bg.png) 
+        background-size: cover
+        align-items: center
+        &-image
+            width: 100%
+            max-width: 210px
+            height: 100%
+        &-link
+            margin: 0 45px
+            transition: filter 0.3s ease
+            &:hover
+                filter: brightness(40%)
+.page-footer
+    background-color: #191919
+    width: 100%
+    display: flex
+    justify-content: space-between
+    flex-flow: wrap column
+    align-items: center
+    &-wrap
+        width: 100%
+        max-width: 1170px
+        display: flex
+        flew-wrap: wrap
+        justify-content: center
+        padding: 80px 0 64px 0
+        box-sizing: border-box
+    &-logo
+        display: flex
+        justify-content: space-between
+        align-items: center
+        max-width: 179px
+        width: 100%
+        text-decoration: none
+        color: #fff
+        &-svg
+            fill: currentColor
+        &-text 
+            font-family: $mainfont
+            font-size: 34px
+            font-weight: 400
+            text-align: right
+        &:hover
+            color: #998675
+        &:active
+            color: darken(#998675, 40%)
+    &-preview
+        max-width: 265px
+        width: 100%
+    &-preview, &-box
+        margin: 0 29px 0 0
+        &-text
+            font-family: $addfont
+            font-size: 14px
+            line-height: 24px
+            font-weight: 300
+            color: #555
+            margin: 20px 0 0 0
+    &-widget
+        display: flex
+        flex-wrap: wrap
+        width: 100%
+        max-width: 270px
+        align-content: flex-start
+        justify-content: space-between
+        margin-left: 10px
+        &-image
+            max-width: 130px
+            width: 100%
+            margin: 27px 0 0 0
+            max-height: 98px
+            &:nth-last-child(1), &:nth-last-child(2)
+                margin: 10px 0 0 0
+                
+        &-title
+            width: 100%
+            margin: 0
+    &-box
+        display: flex
+        flex-flow: wrap column
+        width: 100%
+        max-width: 270px
+        &-title
+            font-family: $mainfont
+            font-size: 24px
+            line-height: 1.2
+            font-weight: 700
+            color: #fff
+            display: block
+            margin: 20px 0 0 0
+            width: 100%
+        &-link
+            text-decoration: none
+            position: relative
+            margin: 17px 0 15px 0
+            &::after
+                content: " "
+                position: absolute
+                display: block
+                width: 100%
+                height: 2px
+                background-color: #252525
+                margin: 18px 0 0 0
+        &-link:last-child::after
+                display: none
+        &-span
+            color: #00bff3
+            &-link
+                color: #959595
+        &-date
+            font-family: $addfont
+            font-size: 12px
+            line-height: 20px
+            font-weight: 300
+            color: #363636
+            margin: 5px 0 0 0
+        &-text
+            font-family: $addfont
+            font-size: 14px
+            line-height: 20px
+            font-weight: 300
+            color: #555555
+            margin: 5px 0 0 0
+    &-bottom
+        width: 100%
+        background: #111
+        padding: 24px 0 34px 0
+        box-sizing: border-box
+        display: flex
+        justify-content: center
+        &-wrap
+            display: flex
+            width: 100%
+            max-width: 1170px
+            justify-content: space-between
+        &-copyright
+            list-style-type: none
+            &-item
+                display: inline
+                &::after
+                    content: "\2223"
+                    margin-left: 5px
+                    color: #252525
+            &-item:last-child::after
+                display: none
+                
+            &-span
+                color: #959595
+            &-link
+                text-decoration: none
+                font-family: $addfont
+                font-size: 13px
+                line-height: 20px
+                font-weight: 300
+                color: #555
+.faq
+    color: #c7b299
+
+.preview-link
+    color: #fff
+    margin: 25px 0 0 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
